@@ -1,0 +1,26 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 236" clip-path="url(#clip0_342_2069)">
+<g id="Group 215">
+<g id="i n">
+<path d="M7.30312 7.99988H7.20312V4.50488H7.30312V7.99988Z" fill="#A6AFBD"/>
+<path d="M12.799 7.99988H12.649L10.184 4.60488V7.99988H10.084V4.50488H10.234L12.699 7.89988V4.50488H12.799V7.99988Z" fill="#A6AFBD"/>
+<path d="M7.30312 7.99988H7.20312V4.50488H7.30312V7.99988Z" stroke="#A6AFBD" stroke-width="0.9" stroke-linejoin="round"/>
+<path d="M12.799 7.99988H12.649L10.184 4.60488V7.99988H10.084V4.50488H10.234L12.699 7.89988V4.50488H12.799V7.99988Z" stroke="#A6AFBD" stroke-width="0.9" stroke-linejoin="round"/>
+</g>
+<g id="Group 214">
+<rect id="Rectangle 3066" x="0.5" y="0.5" width="19" height="19" rx="0.5" stroke="#A6AFBD"/>
+<g id="Group 211">
+<g id="Group 209">
+<path id="Arrow 2" d="M19 14H7" stroke="#A6AFBD" stroke-width="2"/>
+<path id="Polygon 1" d="M3.11784 14.1906C2.96072 14.1121 2.96072 13.8879 3.11784 13.8094L6.69149 12.0228C6.83323 11.9519 7 12.055 7 12.2134V15.7866C7 15.945 6.83323 16.0481 6.69149 15.9772L3.11784 14.1906Z" fill="#A6AFBD"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_342_2069">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

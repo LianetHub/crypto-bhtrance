@@ -1,0 +1,14 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 235" clip-path="url(#clip0_310_5319)">
+<path id="Polygon 6" d="M10 2L18 18H2L10 2Z" stroke="#50505A" stroke-linejoin="round"/>
+<path id="Polygon 7 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M6.85449 15H13.1463L10.0004 8.70819L6.85449 15Z" stroke="#50505A" stroke-linejoin="round"/>
+<circle id="Ellipse 138" cx="10" cy="2" r="1" fill="#FBFCFD" stroke="#50505A"/>
+<circle id="Ellipse 139" cx="18" cy="18" r="1" fill="#FBFCFD" stroke="#50505A"/>
+<circle id="Ellipse 140" cx="2" cy="18" r="1" fill="#FBFCFD" stroke="#50505A"/>
+</g>
+<defs>
+<clipPath id="clip0_310_5319">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

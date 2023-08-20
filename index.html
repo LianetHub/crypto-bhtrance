@@ -30,8 +30,8 @@
             </ul>
         </nav>
         <div class="menu__btns">
-            <a href="" class="menu__btn btn btn-primary">Войти</a>
-            <a href="" class="menu__btn btn btn-primary-outline">Создать аккаунт</a>
+            <a href="#input" data-modal class="menu__btn btn btn-primary">Войти</a>
+            <a href="#register" data-modal class="menu__btn btn btn-primary-outline">Создать аккаунт</a>
         </div>
         <div class="menu__lang">
             <a href="" class="menu__lang-item">en</a>
@@ -154,22 +154,22 @@
               </div>
             </div>
           </div>
-          <div class="desc__slider">
+          <div class="desc__slider tabs">
             <div class="desc__slider-title title">
               Так видят адрес Ивана
             </div>
             <div class="desc__slider-tabs">
-              <button type="button" class="desc__slider-btn active">
+              <button type="button" class="desc__slider-btn tab-btn active">
                 сам Иван
               </button>
-              <button type="button" class="desc__slider-btn">
+              <button type="button" class="desc__slider-btn tab-btn">
                 Compliance Officer биржи
               </button>
             </div>
-            <div class="desc__slider-tab active">
+            <div class="desc__slider-tab tab-content active">
               <img src="img/landing/slider/01.svg" alt="slider">
             </div>
-            <div class="desc__slider-tab">
+            <div class="desc__slider-tab tab-content">
               <img src="img/landing/slider/02.svg" alt="slider">
             </div>
             <div class="desc__slider-content">
@@ -698,6 +698,156 @@
                     <span> Проверить</span>
                 </button>
             </form>
+        </div>
+    </div>
+</div>
+  <div id="input" class="popup">
+    <div class="popup__body popup__body-sm">
+        <button type="button" class="popup__close"></button>
+        <div class="login">
+            <h2 class="login__title title">
+                Login via
+            </h2>
+            <div class="login__body tabs">
+                <div class="login__tabs">
+                    <button type="button" class="login__tab tab-btn active">Web3 Wallet</button>
+                    <button type="button" class="login__tab tab-btn">Email</button>
+                    <button type="button" class="login__tab tab-btn">Telegram</button>
+                </div>
+                <div class="login__input tab-content active">
+                    <div class="login__input-links">
+                        <a href="" class="login__input-link">
+                            <img src="img/metamask.svg" alt="metamask">
+                        </a>
+                        <a href="" class="login__input-link">
+                            <img src="img/everwallet.svg" alt="everwallet">
+                        </a>
+                    </div>
+                    <div class="login__input-warning">
+                        <img src="img/icons/mark.svg" alt="mark">
+                        <p>
+                            для Btrace требуются исключительно права на <span>чтение</span> ваших транзакций
+                        </p>
+                    </div>
+                </div>
+                <div class="login__input tab-content">
+                    <form action="#" class="login__form form">
+                        <div class="form__inputs">
+                            <input type="email" name="email" class="form__input" placeholder="Email">
+                            <input type="password" name="password" class="form__input" placeholder="password">
+                        </div>
+                        <button class="form__btn btn btn-primary">
+                            Log in with Email
+                        </button>
+                        <a href="" class="form__forgot">Forgot Password?</a>
+                    </form>
+                </div>
+                <div class="login__input tab-content">
+                    <a href="" class="login__telegram">
+                        <img src="img/icons/telegram-white.svg" alt="icon telegram">
+                        Log in with Telegram
+                    </a>
+                </div>
+            </div>
+            <a href="#register" data-modal class="login__footer">Don’t have account? Register!</a>
+        </div>
+    </div>
+</div>
+<div id="register" class="popup">
+    <div class="popup__body popup__body-sm">
+        <button type="button" class="popup__close"></button>
+        <div class="login">
+            <h2 class="login__title title">
+                Register
+            </h2>
+            <div class="login__body tabs">
+                <div class="login__tabs">
+                    <button type="button" class="login__tab tab-btn active">Web3 Wallet</button>
+                    <button type="button" class="login__tab tab-btn">Email</button>
+                    <button type="button" class="login__tab tab-btn">Telegram</button>
+                </div>
+                <div class="login__input tab-content active">
+                    <div class="login__input-links">
+                        <a href="" class="login__input-link">
+                            <img src="img/metamask.svg" alt="metamask">
+                        </a>
+                        <a href="" class="login__input-link">
+                            <img src="img/everwallet.svg" alt="everwallet">
+                        </a>
+                    </div>
+                    <div class="login__input-warning">
+                        <img src="img/icons/mark.svg" alt="mark">
+                        <p>
+                            для Btrace требуются исключительно права на <span>чтение</span> ваших транзакций
+                        </p>
+                    </div>
+                </div>
+                <div class="login__input tab-content">
+                    <form action="#" class="login__form form">
+                        <div class="form__inputs">
+                            <div class="form__inputs-row">
+                                <div class="form__label">
+                                    Username
+                                </div>
+                                <input type="email" name="email" class="form__input">
+                                <div class="form__subtitle">
+                                    <span>Username must:</span>
+                                    <ul>
+                                        <li>
+                                            contain only latin letters, numbers and special characters: .@-_
+                                        </li>
+                                        <li>
+                                            contain between 4 and 30 characters
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form__inputs-row">
+                                <div class="form__label">
+                                    Email
+                                </div>
+                                <input type="email" name="email" class="form__input">
+                            </div>
+                            <div class="form__inputs-row">
+                                <div class="form__label">
+                                    Telephone
+                                </div>
+                                <input type="tel" name="tel" class="form__input">
+                            </div>
+                            <div class="form__inputs-row">
+                                <div class="form__label">
+                                    Username
+                                </div>
+                                <input type="email" name="email" class="form__input">
+                                <div class="form__subtitle">
+                                    <span>Password must:</span>
+                                    <ul>
+                                        <li>
+                                            contain only latin letters, numbers and special characters: #$@!%&*?
+                                        </li>
+                                        <li>
+                                            contain at least 1 uppercase and 1 lowercase letters
+                                        </li>
+                                        <li>
+                                            contain between 4 and 30 characters
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="form__btn btn btn-primary">
+                            Confirm
+                        </button>
+                    </form>
+                </div>
+                <div class="login__input tab-content">
+                    <a href="" class="login__telegram">
+                        <img src="img/icons/telegram-white.svg" alt="icon telegram">
+                        Log in with Telegram
+                    </a>
+                </div>
+            </div>
+            <a href="#input" data-modal class="login__footer">Already have an account? Sign in!</a>
         </div>
     </div>
 </div>

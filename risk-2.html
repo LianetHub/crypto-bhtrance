@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>AML Crypto | Risk Page</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="css/reset.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header header-logined">
+    <a href="/" class="header__logo">
+        <img src="img/logo.gif" alt="logo">
+    </a>
+    <div class="header__wallet">
+        <div class="header__wallet-current">
+            <img src="img/icons/key-yellow.svg" alt="key icon">
+            59 999
+        </div>
+        <button type="button" class="header__wallet-btn">
+            <span>Нужны еще проверки</span>
+            <img src="img/icons/down.svg" alt="icon down">
+        </button>
+        <div class="header__wallet-menu">
+            <div class="header__wallet-switcher switcher">
+                <input type="checkbox" name="view" class="switcher__input">
+                <span class="switcher__value switcher__value-initial">crypto</span>
+                <span class="switcher__value switcher__value-checked">fiat</span>
+            </div>
+            <div class="header__wallet-list">
+                <label class="header__wallet-option">
+                    <input type="radio" class="header__wallet-input hidden" hidden name="price" value="1">
+                    <span class="header__wallet-content">
+                        <span class="header__wallet-value">
+                            +1
+                        </span>
+                        <span class="header__wallet-text">
+                            <span class="header__wallet-highlight">$1</span>/ $1 за проверку
+                        </span>
+                    </span>
+                </label>
+                <label class="header__wallet-option">
+                    <input type="radio" class="header__wallet-input hidden" hidden name="price" value="10">
+                    <span class="header__wallet-content">
+                        <span class="header__wallet-value">
+                            +10
+                        </span>
+                        <span class="header__wallet-text">
+                            <span class="header__wallet-highlight">$9</span>/ $0.9 за проверку
+                        </span>
+                    </span>
+                </label>
+                <label class="header__wallet-option">
+                    <input type="radio" class="header__wallet-input hidden" hidden name="price" value="25">
+                    <span class="header__wallet-content">
+                        <span class="header__wallet-value">
+                            +25
+                        </span>
+                        <span class="header__wallet-text">
+                            <span class="header__wallet-highlight">$20</span>/ $0.8 за проверку
+                        </span>
+                    </span>
+                </label>
+                <label class="header__wallet-option">
+                    <input type="radio" class="header__wallet-input hidden" hidden name="price" value="100">
+                    <span class="header__wallet-content">
+                        <span class="header__wallet-value">
+                            +100
+                        </span>
+                        <span class="header__wallet-text">
+                            <span class="header__wallet-highlight">$75</span>/ $0.75 за проверку
+                        </span>
+                    </span>
+                </label>
+            </div>
+            <div class="header__wallet-privacy">
+                <label class="header__wallet-checkbox checkbox">
+                    <input type="checkbox" class="checkbox__input hidden" hidden name="privacy">
+                    <span class="checkbox__content">Пользовательское соглашение</span>
+                </label>
+                <label class="header__wallet-checkbox checkbox">
+                    <input type="checkbox" class="checkbox__input hidden" hidden name="conf">
+                    <span class="checkbox__content">Соглашение конфиденциальности</span>
+                </label>
+            </div>
+            <button type="button" class="header__wallet-payment">
+                перейти к оплате
+                <img src="img/icons/arrow-right-white.svg" alt="arrow icon">
+            </button>
+        </div>
+    </div>
+    <div class="menu">
+        <nav class="menu__side">
+            <button class="menu__side-btn"><span></span></button>
+            <a href="/" class="menu__side-logo">
+                <img src="img/logo.gif" alt="logo">
+            </a>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="/account.html" class="menu__link ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1401_190)">
+                                <path stroke="var(--hover-color)" d="M2.87664 14.3521C5.57582 17.0513 9.70348 17.4513 12.8261 15.5523L16.4044 19.1305C16.897 19.6232 17.6957 19.6232 18.1883 19.1305L19.1305 18.1883C19.6232 17.6957 19.6232 16.897 19.1305 16.4044L15.5523 12.8261C17.4513 9.70348 17.0513 5.57582 14.3521 2.87664C11.1832 -0.292214 6.0455 -0.292214 2.87664 2.87664C-0.292214 6.0455 -0.292214 11.1832 2.87664 14.3521ZM10.1453 3.62221C10.9483 4.42522 10.9483 5.72717 10.1453 6.53019C9.34225 7.3332 8.04031 7.3332 7.23729 6.53019C6.43428 5.72717 6.43428 4.42522 7.23729 3.62221C8.04031 2.81919 9.34226 2.81919 10.1453 3.62221Z" stroke="#50505A" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1401_190">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>check address</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/addresses.html" class="menu__link ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path fill="var(--hover-color)" d="M15.1154 10.2564C15.3915 10.2564 15.6154 10.0326 15.6154 9.75641C15.6154 9.48027 15.3915 9.25641 15.1154 9.25641V10.2564ZM12.6795 9.25641C12.4033 9.25641 12.1795 9.48027 12.1795 9.75641C12.1795 10.0326 12.4033 10.2564 12.6795 10.2564V9.25641ZM1.47436 4.89744L16.5769 4.89744V3.89744L1.47436 3.89744V4.89744ZM16.5769 14.6154L1.47436 14.6154L1.47436 15.6154L16.5769 15.6154V14.6154ZM1 14.141L1 5.37179H2.98023e-08L2.98023e-08 14.141H1ZM17.0513 5.37179V7.80769H18.0513V5.37179H17.0513ZM17.0513 11.7051V14.141H18.0513V11.7051H17.0513ZM1.47436 14.6154C1.21238 14.6154 1 14.403 1 14.141H2.98023e-08C2.98023e-08 14.9553 0.660092 15.6154 1.47436 15.6154L1.47436 14.6154ZM16.5769 15.6154C17.3912 15.6154 18.0513 14.9553 18.0513 14.141H17.0513C17.0513 14.403 16.8389 14.6154 16.5769 14.6154V15.6154ZM16.5769 4.89744C16.8389 4.89744 17.0513 5.10981 17.0513 5.37179H18.0513C18.0513 4.55753 17.3912 3.89744 16.5769 3.89744V4.89744ZM1.47436 3.89744C0.660093 3.89744 2.98023e-08 4.55753 2.98023e-08 5.37179H1C1 5.10981 1.21238 4.89744 1.47436 4.89744V3.89744ZM11.7051 8.30769H18.5256V7.30769L11.7051 7.30769V8.30769ZM19 8.78205V10.7308H20V8.78205H19ZM18.5256 11.2051L11.7051 11.2051V12.2051L18.5256 12.2051V11.2051ZM11.2308 10.7308V8.78205H10.2308V10.7308H11.2308ZM11.7051 11.2051C11.4431 11.2051 11.2308 10.9928 11.2308 10.7308H10.2308C10.2308 11.545 10.8909 12.2051 11.7051 12.2051V11.2051ZM19 10.7308C19 10.9927 18.7876 11.2051 18.5256 11.2051V12.2051C19.3399 12.2051 20 11.545 20 10.7308H19ZM18.5256 8.30769C18.7876 8.30769 19 8.52007 19 8.78205H20C20 7.96778 19.3399 7.30769 18.5256 7.30769V8.30769ZM11.7051 7.30769C10.8909 7.30769 10.2308 7.96778 10.2308 8.78205H11.2308C11.2308 8.52007 11.4431 8.30769 11.7051 8.30769V7.30769ZM4.88462 19.0256H8.19744V18.0256H4.88462L4.88462 19.0256ZM4.78718 19H3.03333L3.03333 20H4.78718V19ZM3.4359 19.4026V17.6487H2.4359L2.4359 19.4026H3.4359ZM3.03333 18.0513H4.78718V17.0513H3.03333L3.03333 18.0513ZM4.38462 17.6487V19.4026H5.38462L5.38462 17.6487H4.38462ZM14.6282 18.0256H11.3154V19.0256H14.6282V18.0256ZM14.7256 20H16.4795V19H14.7256V20ZM17.0769 19.4026V17.6487H16.0769V19.4026H17.0769ZM16.4795 17.0513H14.7256V18.0513H16.4795V17.0513ZM14.1282 17.6487V19.4026H15.1282V17.6487H14.1282ZM10.7179 15.1154V18.4282H11.7179V15.1154H10.7179ZM7.79487 15.1154V18.4282L8.79487 18.4282V15.1154H7.79487ZM5.85897 1.97436L8.19744 1.97436V0.974359L5.85897 0.974359V1.97436ZM5.76154 2.98023e-08L4.00769 2.98023e-08V1L5.76154 1V2.98023e-08ZM3.41026 0.597436L3.41026 2.35128H4.41026V0.597436L3.41026 0.597436ZM4.00769 2.94872L5.76154 2.94872L5.76154 1.94872L4.00769 1.94872V2.94872ZM6.35897 2.35128V0.597436L5.35897 0.597436V2.35128L6.35897 2.35128ZM13.6538 0.974359L11.3154 0.974359V1.97436L13.6538 1.97436V0.974359ZM13.7513 1L15.5051 1V2.98023e-08L13.7513 2.98023e-08V1ZM15.1026 0.597436V2.35128H16.1026V0.597436L15.1026 0.597436ZM15.5051 1.94872L13.7513 1.94872V2.94872L15.5051 2.94872V1.94872ZM14.1538 2.35128V0.597436L13.1538 0.597436V2.35128L14.1538 2.35128ZM11.7179 4.39744V1.57179L10.7179 1.57179V4.39744L11.7179 4.39744ZM15.1154 9.25641H12.6795V10.2564H15.1154V9.25641ZM8.79487 4.39744V1.57179L7.79487 1.57179L7.79487 4.39744H8.79487ZM15.5051 1C15.2828 1 15.1026 0.819772 15.1026 0.597436L16.1026 0.597436C16.1026 0.267475 15.8351 2.98023e-08 15.5051 2.98023e-08V1ZM13.7513 2.98023e-08C13.4213 2.98023e-08 13.1538 0.267481 13.1538 0.597436L14.1538 0.597436C14.1538 0.819766 13.9736 1 13.7513 1V2.98023e-08ZM11.3154 0.974359C10.9854 0.974359 10.7179 1.24184 10.7179 1.57179L11.7179 1.57179C11.7179 1.79413 11.5377 1.97436 11.3154 1.97436V0.974359ZM5.76154 2.94872C6.09149 2.94872 6.35897 2.68124 6.35897 2.35128L5.35897 2.35128C5.35897 2.12895 5.53921 1.94872 5.76154 1.94872L5.76154 2.94872ZM3.41026 2.35128C3.41026 2.68124 3.67774 2.94872 4.00769 2.94872V1.94872C4.23002 1.94872 4.41026 2.12895 4.41026 2.35128H3.41026ZM4.00769 2.98023e-08C3.67774 2.98023e-08 3.41026 0.267481 3.41026 0.597436L4.41026 0.597436C4.41026 0.819767 4.23002 1 4.00769 1V2.98023e-08ZM5.76154 1C5.53921 1 5.35897 0.819766 5.35897 0.597436L6.35897 0.597436C6.35897 0.267481 6.09149 2.98023e-08 5.76154 2.98023e-08V1ZM14.7256 17.0513C14.3957 17.0513 14.1282 17.3188 14.1282 17.6487H15.1282C15.1282 17.8711 14.948 18.0513 14.7256 18.0513V17.0513ZM17.0769 17.6487C17.0769 17.3188 16.8094 17.0513 16.4795 17.0513V18.0513C16.2572 18.0513 16.0769 17.871 16.0769 17.6487H17.0769ZM16.4795 20C16.8095 20 17.0769 19.7325 17.0769 19.4026H16.0769C16.0769 19.1802 16.2571 19 16.4795 19V20ZM14.7256 19C14.948 19 15.1282 19.1802 15.1282 19.4026H14.1282C14.1282 19.7325 14.3957 20 14.7256 20V19ZM11.3154 18.0256C11.5377 18.0256 11.7179 18.2059 11.7179 18.4282H10.7179C10.7179 18.7582 10.9854 19.0256 11.3154 19.0256V18.0256ZM4.78718 18.0513C4.56485 18.0513 4.38462 17.8711 4.38462 17.6487H5.38462C5.38462 17.3188 5.11713 17.0513 4.78718 17.0513V18.0513ZM8.19744 1.97436C7.97511 1.97436 7.79487 1.79413 7.79487 1.57179L8.79487 1.57179C8.79487 1.24184 8.52739 0.974359 8.19744 0.974359V1.97436ZM3.4359 17.6487C3.4359 17.8711 3.25566 18.0513 3.03333 18.0513L3.03333 17.0513C2.70338 17.0513 2.4359 17.3188 2.4359 17.6487H3.4359ZM3.03333 19C3.25567 19 3.4359 19.1802 3.4359 19.4026H2.4359C2.4359 19.7325 2.70337 20 3.03333 20L3.03333 19ZM13.7513 1.94872C13.9736 1.94872 14.1538 2.12895 14.1538 2.35128L13.1538 2.35128C13.1538 2.68124 13.4213 2.94872 13.7513 2.94872V1.94872ZM4.78718 20C5.11714 20 5.38462 19.7325 5.38462 19.4026H4.38462C4.38462 19.1802 4.56484 19 4.78718 19V20ZM15.1026 2.35128C15.1026 2.12895 15.2828 1.94872 15.5051 1.94872V2.94872C15.8351 2.94872 16.1026 2.68124 16.1026 2.35128H15.1026ZM8.19744 19.0256C8.5274 19.0256 8.79487 18.7582 8.79487 18.4282L7.79487 18.4282C7.79487 18.2059 7.9751 18.0256 8.19744 18.0256V19.0256Z" />
+                        </svg>
+                        <span>My addresses</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/rating.html" class="menu__link ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5.50054 10.1429L3.35283 8.60878C1.92123 7.58621 1.22244 5.8191 1.56746 4.09398L1.66819 3.59032C2.02757 1.79343 3.6053 0.5 5.43777 0.5C6.31069 0.5 7.15761 0.797085 7.83925 1.34239L9.93807 3.02145C9.97459 3.05067 10.0265 3.05067 10.063 3.02145L12.1618 1.34239C12.8435 0.797085 13.6904 0.5 14.5633 0.5C16.3958 0.5 17.9735 1.79343 18.3329 3.59032L18.4336 4.09398C18.7786 5.8191 18.0799 7.58621 16.6483 8.60878L12.0005 11.9286" stroke="var(--hover-color)" stroke-linecap="round" />
+                            <path d="M6.45281 19.5L3.96934 18.2583C3.95831 18.2528 3.94763 18.2462 3.93794 18.2386C3.33696 17.7653 3.52333 16.8013 3.54096 16.7171C3.54188 16.7127 3.54267 16.7097 3.54408 16.7054C3.57562 16.6095 4.0238 15.3691 5.82398 16.2708L6.96478 16.8519C7.09784 16.9197 7.25555 16.823 7.25555 16.6737V10.8842C7.25555 10.1198 7.94186 9.5 8.78843 9.5C9.63499 9.5 10.3213 10.1198 10.3213 10.8842V14.229C10.3213 14.3308 10.3978 14.4163 10.4989 14.4277L15.1095 14.9464C15.8768 15.0327 16.4528 15.6217 16.4528 16.32C16.4528 16.3751 16.4525 17.8333 15.6191 19.5" stroke="var(--hover-color)" stroke-linecap="round" />
+                        </svg>
+                        <span>my social rating</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/balance.html" class="menu__link ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <ellipse cx="5.5" cy="2" rx="5" ry="1.5" stroke="var(--hover-color)" />
+                            <path d="M10.5 4C10.5 4.82843 8.26142 5.5 5.5 5.5C2.73858 5.5 0.5 4.82843 0.5 4" stroke="var(--hover-color)" />
+                            <path d="M10.5 6C10.5 6.82843 8.26142 7.5 5.5 7.5C2.73858 7.5 0.5 6.82843 0.5 6" stroke="var(--hover-color)" />
+                            <path d="M10.5 8C10.5 8.82843 8.26142 9.5 5.5 9.5C2.73858 9.5 0.5 8.82843 0.5 8" stroke="var(--hover-color)" />
+                            <path d="M10.5 10C10.5 10.8284 8.26142 11.5 5.5 11.5C2.73858 11.5 0.5 10.8284 0.5 10" stroke="var(--hover-color)" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.10814 12.5813C2.9546 12.8352 4.15393 12.9995 5.5 12.9995C6.84607 12.9995 8.0454 12.8352 8.89186 12.5813C9.31827 12.4533 9.75 12.3679 9.75 12.3679C9.75 12.3679 9.65762 13.3956 9.17921 13.5391C8.21602 13.8281 6.91535 13.9995 5.5 13.9995C4.08465 13.9995 2.78398 13.8281 1.82079 13.5391C1.34238 13.3956 0.9188 13.2147 0.603659 12.9912C0.301507 12.7769 0 12.449 0 11.9995H1C1 11.9933 0.999333 11.9902 0.999333 11.9902C0.999333 11.9902 1.01432 12.0565 1.18219 12.1756C1.37308 12.311 1.68173 12.4533 2.10814 12.5813Z" fill="var(--hover-color)" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.10814 14.5813C2.9546 14.8352 4.15393 14.9995 5.5 14.9995C6.84607 14.9995 8.0454 14.8352 8.89186 14.5813C9.31827 14.4533 9.75 14.3679 9.75 14.3679C9.75 14.3679 9.65762 15.3956 9.17921 15.5391C8.21602 15.8281 6.91535 15.9995 5.5 15.9995C4.08465 15.9995 2.78398 15.8281 1.82079 15.5391C1.34238 15.3956 0.9188 15.2147 0.603659 14.9912C0.301507 14.7769 0 14.449 0 13.9995H1C1 13.9933 0.999333 13.9902 0.999333 13.9902C0.999333 13.9902 1.01432 14.0565 1.18219 14.1756C1.37308 14.311 1.68173 14.4533 2.10814 14.5813Z" fill="var(--hover-color)" />
+                            <line x1="10.5" y1="2" x2="10.5" y2="11" stroke="var(--hover-color)" />
+                            <line x1="0.5" y1="2" x2="0.5" y2="14" stroke="var(--hover-color)" />
+                            <ellipse cx="14.5" cy="12" rx="5" ry="1.5" stroke="var(--hover-color)" />
+                            <path d="M19.5 14C19.5 14.8284 17.2614 15.5 14.5 15.5C11.7386 15.5 9.5 14.8284 9.5 14" stroke="var(--hover-color)" />
+                            <path d="M19.5 16C19.5 16.8284 17.2614 17.5 14.5 17.5C11.7386 17.5 9.5 16.8284 9.5 16" stroke="var(--hover-color)" />
+                            <path d="M19.5 18C19.5 18.8284 17.2614 19.5 14.5 19.5C11.7386 19.5 9.5 18.8284 9.5 18" stroke="var(--hover-color)" />
+                            <line x1="19.5" y1="12" x2="19.5" y2="18" stroke="var(--hover-color)" />
+                            <line x1="9.5" y1="12" x2="9.5" y2="18" stroke="var(--hover-color)" />
+                        </svg>
+                        <span>My balance</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/pricing.html" class="menu__link ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1401_863)">
+                                <path d="M4.29101 11.8262C4.09252 11.6283 3.98621 11.3562 3.99798 11.0761L4.20639 6.1187C4.24996 5.08232 5.07864 4.25126 6.11488 4.20472L11.0717 3.98207C11.3517 3.96949 11.6242 4.07502 11.8226 4.27294L18.9858 11.4155C19.3768 11.8055 19.3777 12.4386 18.9878 12.8297L12.8683 18.9668C12.4784 19.3579 11.8452 19.3588 11.4541 18.9688L4.29101 11.8262Z" stroke="var(--hover-color)" stroke-linejoin="round" />
+                                <circle cx="8.68945" cy="8.68075" r="1.77778" transform="rotate(-45.0823 8.68945 8.68075)" stroke="var(--hover-color)" />
+                                <path d="M8.68962 8.68065L8.28306 8.84874C6.85291 9.44003 5.23133 9.34781 3.87744 8.59819V8.59819C2.54577 7.86087 1.61447 6.56573 1.33944 5.06862L0.500154 0.500003" stroke="var(--hover-color)" stroke-linecap="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1401_863">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>pricing</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="/history.html" class="menu__link ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1401_397)">
+                                <path d="M3 9.99957C2.99918 9.0503 3.19145 8.11078 3.56511 7.23815C3.93877 6.36551 4.48601 5.57799 5.17356 4.92348C5.86111 4.26896 6.6746 3.76113 7.56457 3.43086C8.45453 3.10059 9.40237 2.95479 10.3505 3.00231C11.2985 3.04984 12.227 3.2897 13.0795 3.70731C13.932 4.12493 14.6906 4.71157 15.3093 5.43156C15.9279 6.15155 16.3937 6.98985 16.6782 7.89548C16.9575 8.78468 17.0565 9.72055 16.9693 10.6482C16.9392 10.9684 17.1903 11.25 17.5171 11.25H18.9158C19.2013 11.25 19.4403 11.0312 19.4639 10.7453C19.4835 10.5075 19.5 10.2583 19.5 10C19.5 8.12108 18.9428 6.28435 17.899 4.72209C16.8551 3.15982 15.3714 1.94218 13.6355 1.22315C11.8996 0.504116 9.98946 0.315984 8.14664 0.682544C6.30383 1.0491 4.61109 1.95389 3.28249 3.28249C1.95389 4.61109 1.0491 6.30383 0.682544 8.14664C0.315984 9.98946 0.504116 11.8996 1.22315 13.6355C1.94218 15.3714 3.15982 16.8551 4.72209 17.899C6.28435 18.9428 8.12108 19.5 10 19.5C10.2583 19.5 10.5075 19.4835 10.7453 19.4639C11.0312 19.4403 11.25 19.2013 11.25 18.9158V17.5171C11.25 17.1902 10.9684 16.9392 10.6482 16.9693C9.69152 17.0592 8.72642 16.951 7.81312 16.6513C6.88347 16.3462 6.02817 15.8494 5.30251 15.1931C4.57685 14.5367 3.99697 13.7355 3.60036 12.841C3.20375 11.9466 2.99922 10.9788 3 10.0004L3 9.99957Z" stroke="var(--hover-color)" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M11.5 14.5H18.5" stroke="var(--hover-color)" stroke-linecap="round" />
+                                <path d="M13.5 16.5H18.5" stroke="var(--hover-color)" stroke-linecap="round" />
+                                <path d="M15.5 18.5H18.5" stroke="var(--hover-color)" stroke-linecap="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1401_397">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>checks history</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1401_307)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1346 0.5C19.3364 0.5 19.5 0.649378 19.5 0.833644V15.1006C19.5 15.2849 19.3364 15.4342 19.1346 15.4342H14.0366C13.4312 15.4342 12.9405 15.8824 12.9405 16.4352V19.5L7.38408 15.6387C7.19325 15.5061 6.96005 15.4342 6.72024 15.4342H0.865383C0.663587 15.4342 0.5 15.2849 0.5 15.1006V0.833644C0.5 0.649377 0.663587 0.5 0.865383 0.5H19.1346Z" stroke="var(--hover-color)" stroke-linecap="round" stroke-linejoin="round" />
+                                <rect x="-0.5" y="0.5" width="2" height="2" rx="0.5" transform="matrix(-1 0 0 1 15.5 6.5)" stroke="var(--hover-color)" />
+                                <rect x="-0.5" y="0.5" width="2" height="2" rx="0.5" transform="matrix(-1 0 0 1 10.5 6.5)" stroke="var(--hover-color)" />
+                                <rect x="-0.5" y="0.5" width="2" height="2" rx="0.5" transform="matrix(-1 0 0 1 5.5 6.5)" stroke="var(--hover-color)" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1401_307">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>api</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu__btns">
+            <a href="" class="menu__btn btn btn-primary">Выйти</a>
+            <a href="" class="menu__user">Username</a>
+        </div>
+        <div class="menu__lang">
+            <a href="" class="menu__lang-item">en</a>
+            <span class="menu__lang-separator"></span>
+            <a href="" class="menu__lang-item">ru</a>
+        </div>
+    </div>
+    <button type="button" class="header__menu-btn icon-menu">
+        <span></span>
+    </button>
+</header>
+    <main class="page">
+      <section class="hot">
+    <div class="container">
+        <div class="hot__body">
+            <h1 class="hot__title">
+                <img src="img/icons/hand.svg" alt="hand">
+                Recent Hot Event:
+            </h1>
+            <a href="" class="hot__link">Team Finance Exploiter (0xBa3...17e6E)</a>
+        </div>
+    </div>
+</section>
+      <section class="risk">
+        <div class="container container-lg">
+          <div class="risk__search">
+            <form action="#" class="risk__search-form">
+              <div class="risk__search-body">
+                <input type="text" name="search" class="form__input" placeholder="Check wallet address, URL, Twitter handle">
+                <button type="submit" class="btn btn-primary">
+                  <img src="img/icons/magnifier.svg" alt="magnifier">
+                </button>
+              </div>
+              <div class="risk__search-footer">
+                Number of remaining checks: <strong>29</strong>
+              </div>
+            </form>
+            <div class="risk__search-hot">
+              <div class="hot__title">
+                <img src="img/icons/hand.svg" alt="hand">
+                Recent Hot Event:
+              </div>
+              <a href="" class="hot__link">Team Finance Exploiter (0xBa3...17e6E)</a>
+            </div>
+          </div>
+          <div class="risk__header">
+            <div class="risk__wallet">
+              <div class="risk__wallet-score red">
+                <span class="score-title">RISK SCORE:</span>
+                <span class="score-color">High</span>
+                <button type="button" class="risk__info">
+                  <img src="img/icons/question.svg" alt="icon question">
+                </button>
+              </div>
+              <div class="risk__wallet-body">
+                <div class="risk__wallet-title">
+                  Deribit Hotwallet Exploiter
+                </div>
+                <div class="risk__wallet-hash">
+                  0x8d08aad4b2bac2bb761ac4781cf62468c9ec47b4
+                  <button type="button" class="risk__wallet-copy">
+                    <img src="img/icons/copy.svg" alt="copy">
+                  </button>
+                </div>
+                <div class="risk__currencies">
+                  <div class="risk__currency">
+                    <div class="risk__currency-caption bold">
+                      eth
+                    </div>
+                    <ul class="risk__currency-list">
+                      <li>
+                        <img src="img/risk/shib.svg" alt="shib">
+                      </li>
+                      <li>
+                        <img src="img/risk/usdc.svg" alt="usdc">
+                      </li>
+                      <li>
+                        <img src="img/risk/usdt.svg" alt="usdt">
+                      </li>
+                      <li>
+                        <img src="img/risk/bitcoin.svg" alt="bitcoin">
+                      </li>
+                      <li>
+                        <img src="img/risk/eth.svg" alt="eth">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="risk__currency">
+                    <div class="risk__currency-caption">
+                      bsc
+                    </div>
+                    <ul class="risk__currency-list">
+                      <li>
+                        <img src="img/risk/eth.svg" alt="eth">
+                      </li>
+                      <li>
+                        <img src="img/risk/currency-1.svg" alt="curr">
+                      </li>
+                      <li>
+                        <img src="img/risk/currency-2.svg" alt="curr">
+                      </li>
+                      <li>
+                        <img src="img/risk/currency-3.svg" alt="curr">
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="" class="risk__more">More >></a>
+                </div>
+                <div class="risk__actions">
+                  <button type="button" class="risk__action btn btn-gradient">
+                    <img src="img/icons/bell.svg" class="pc-image" alt="icon bell">
+                    <img src="img/icons/bell-gradient.svg" class="mobile-image" alt="icon bell">
+                    <span>ADD MONITORING</span>
+                  </button>
+                  <button type="button" class="risk__action btn btn-primary-outline">
+                    <img src="img/icons/share.svg" alt="icon share">
+                    <span>Share</span>
+                  </button>
+                  <button type="button" class="risk__action btn btn-orange-outline">
+                    <img src="img/icons/export.svg" alt="icon export">
+                    <span>export</span>
+                  </button>
+                  <div class="risk__action-num">
+                    Number of searches: <strong>12</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="risk__balance">
+              <div class="risk__caption">
+                <img src="img/icons/money-black.svg" alt="money">
+                current balance
+                <button type="button" class="risk__info">
+                  <img src="img/icons/question.svg" alt="icon question">
+                </button>
+              </div>
+              <div class="risk__balance-value">
+                <span>$</span>157.77
+              </div>
+              <div class="risk__person">
+                <div class="risk__person-icon">
+                  <img src="img/icons/first.svg" alt="icon">
+                </div>
+                <div class="risk__person-content">
+                  <div class="risk__person-name">First transaction date</div>
+                  <div class="risk__person-date">Apr 11, 2022 11:57 PM UTC</div>
+                  <a href="" class="risk__person-link">View on explorer >></a>
+                </div>
+              </div>
+              <div class="risk__person">
+                <div class="risk__person-icon">
+                  <img src="img/icons/last.svg" alt="icon">
+                </div>
+                <div class="risk__person-content">
+                  <div class="risk__person-name">Last transaction date</div>
+                  <div class="risk__person-date">Apr 11, 2022 11:57 PM UTC</div>
+                  <a href="" class="risk__person-link">View on explorer >></a>
+                </div>
+              </div>
+              <div class="risk__person">
+                <div class="risk__person-icon">
+                  <img src="img/icons/address.svg" alt="icon">
+                </div>
+                <div class="risk__person-content">
+                  <div class="risk__person-name">gas fee source</div>
+                  <div class="risk__person-hash">0x58F56...4B4A3
+                    <button type="button" class="risk__person-copy">
+                      <img src="img/icons/copy.svg" alt="copy">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="risk__update">
+                <img src="img/icons/update-gray.svg" alt="icon update">
+                <div class="risk__update-content">
+                  <div class="risk__update-caption">Previous update:</div>
+                  <div class="risk__update-date">17.04.2023 23:38:09</div>
+                </div>
+              </div>
+            </div>
+            <div class="risk__course">
+              <div class="risk__course-item">
+                <div class="risk__course-logo">
+                  <img src="img/risk/eth.svg" alt="eth">
+                </div>
+                <div class="risk__course-name">
+                  ETH (ERC20)
+                </div>
+                <div class="risk__course-value">
+                  <span>0.02</span> $37.23
+                </div>
+              </div>
+              <span class="risk__course-separator"></span>
+              <div class="risk__course-item">
+                <div class="risk__course-logo">
+                  <img src="img/risk/usdt.svg" alt="usdt">
+                </div>
+                <div class="risk__course-name">
+                  USDT (ERC20)
+                </div>
+                <div class="risk__course-value">
+                  <span>16.7</span> $16.7
+                </div>
+              </div>
+              <span class="risk__course-separator"></span>
+              <div class="risk__course-item">
+                <div class="risk__course-logo">
+                  <img src="img/risk/usdc.svg" alt="usdc">
+                </div>
+                <div class="risk__course-name">
+                  USDC (BEP20)
+                </div>
+                <div class="risk__course-value">
+                  <span>14.0</span> $14.0
+                </div>
+              </div>
+              <span class="risk__course-separator"></span>
+              <div class="risk__course-item">
+                <div class="risk__course-logo">
+                  <img src="img/risk/shib.svg" alt="shib">
+                </div>
+                <div class="risk__course-name">
+                  SHIB (ERC20)
+                </div>
+                <div class="risk__course-value">
+                  <span>9032311</span> $89.84
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="risk__section">
+            <h2 class="risk__section-title title">
+              Risk score
+            </h2>
+            <div class="risk__score risk__disabled">
+              <div class="risk__score-side">
+                <div class="risk__caption">
+                  <img src="img/icons/precent-dark.svg" alt="precent">
+                  Final Risk Score
+                  <button type="button" class="risk__info">
+                    <img src="img/icons/question.svg" alt="icon question">
+                  </button>
+                </div>
+                <div class="risk__score-value">
+                  100
+                </div>
+                <div class="risk__score-dissagre">
+                  <a href="" class="risk__score-link">
+                    I disagree
+                  </a>
+                  <button type="button" class="risk__info">
+                    <img src="img/icons/question.svg" alt="icon question">
+                  </button>
+                </div>
+                <div class="risk__label">
+                  <div class="risk__caption">
+                    <img src="img/icons/precent-dark.svg" alt="precent">
+                    Do you own this address?
+                    <button type="button" class="risk__info">
+                      <img src="img/icons/question.svg" alt="icon question">
+                    </button>
+                  </div>
+                  <a href="" class="risk__btn btn btn-fullwidth btn-orange">Improve Risk Score</a>
+                </div>
+              </div>
+              <div class="risk__score-chart">
+                <div class="risk__caption">
+                  <img src="img/icons/diagram.svg" alt="diagram">
+                  Risk Score Factors
+                  <button type="button" class="risk__info">
+                    <img src="img/icons/question.svg" alt="icon question">
+                  </button>
+                </div>
+                <img src="img/risk/chart-1.svg" alt="chart">
+              </div>
+              <div class="risk__score-comments">
+                <div class="risk__caption">
+                  Comments
+                </div>
+                <ul class="risk__comments-list">
+                  <li class="risk__comments-item">
+                    <div class="risk__comments-caption">
+                      counterparty interaction
+                    </div>
+                    <div class="risk__comments-text">
+                      The address interacts with high-risk counterparties
+                    </div>
+                  </li>
+                  <li class="risk__comments-item">
+                    <div class="risk__comments-caption">
+                      social rating
+                    </div>
+                    <div class="risk__comments-text">
+                      Public address, there is information about it on the Internet
+                    </div>
+                  </li>
+                  <li class="risk__comments-item">
+                    <div class="risk__comments-caption">
+                      transactions
+                    </div>
+                    <div class="risk__comments-text">
+                      The address interacts with high-risk counterparties
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="" class="risk__disabled-btn">Buy extended report</a>
+          </div>
+          <div class="risk__section">
+            <h2 class="risk__section-title title">
+              Transactions
+            </h2>
+            <div class="risk__transactions risk__disabled">
+              <div class="risk__transactions-header">
+                <div class="risk__transactions-side">
+                  <div class="risk__caption">
+                    <img src="img/icons/transaction.svg" alt="transaction">
+                    transactions
+                    <button type="button" class="risk__info">
+                      <img src="img/icons/question.svg" alt="icon question">
+                    </button>
+                  </div>
+                  <div class="risk__transactions-blocks">
+                    <div class="risk__transactions-block">
+                      <ul class="risk__transactions-list">
+                        <li>
+                          <div class="risk__transactions-termin">
+                            Total transfers
+                          </div>
+                          <div class="risk__transactions-value">
+                            471
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="risk__transactions-block">
+                      <div class="risk__transactions-caption">
+                        <img src="img/icons/input.svg" alt="input">
+                        incoming
+                      </div>
+                      <ul class="risk__transactions-list">
+                        <li>
+                          <div class="risk__transactions-termin">
+                            Total
+                          </div>
+                          <div class="risk__transactions-value">
+                            $6,005,338.06
+                          </div>
+                        </li>
+                        <li>
+                          <div class="risk__transactions-termin">
+                            Transfers
+                          </div>
+                          <div class="risk__transactions-value">
+                            135
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="risk__transactions-block">
+                      <div class="risk__transactions-caption">
+                        <img src="img/icons/output.svg" alt="output">
+                        outgoing
+                      </div>
+                      <ul class="risk__transactions-list">
+                        <li>
+                          <div class="risk__transactions-termin">
+                            Total
+                          </div>
+                          <div class="risk__transactions-value">
+                            $6,005,338.06
+                          </div>
+                        </li>
+                        <li>
+                          <div class="risk__transactions-termin">
+                            Transfers
+                          </div>
+                          <div class="risk__transactions-value">
+                            336
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="risk__transactions-content">
+                  <div class="risk__caption">
+                    <img src="img/icons/clock.svg" alt="clock">
+                    Time Analysis
+                    <button type="button" class="risk__info">
+                      <img src="img/icons/question.svg" alt="icon question">
+                    </button>
+                  </div>
+                  <div class="risk__transactions-grid">
+                    <div class="risk__transactions-chart">
+                      <img src="img/risk/chart-2.svg" class="pc-image" alt="chart">
+                      <img src="img/risk/chart-2-mobile.svg" class="mobile-image" alt="chart">
+                    </div>
+                    <div class="risk__transactions-chart">
+                      <img src="img/risk/chart-3.svg" class="pc-image" alt="chart">
+                      <img src="img/risk/chart-3-mobile.svg" class="mobile-image" alt="chart">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="risk__transaction-body">
+                <div class="risk__transaction">
+                  <div class="risk__transaction-name">
+                    <img src="img/icons/type.svg" alt="type">
+                    <span>transactions</span> by type
+                  </div>
+                  <div class="risk__transaction-charts">
+                    <div class="risk__transaction-chart">
+                      <img src="img/risk/chart-4.svg" class="pc-image" alt="chart">
+                      <img src="img/risk/chart-4-mobile.svg" class="mobile-image" alt="chart">
+                    </div>
+                    <div class="risk__transaction-chart">
+                      <img src="img/risk/chart-5.svg" class="pc-image" alt="chart">
+                      <img src="img/risk/chart-5-mobile.svg" class="mobile-image" alt="chart">
+                    </div>
+                  </div>
+                </div>
+                <div class="risk__transaction">
+                  <div class="risk__transaction-name">
+                    <img src="img/icons/address.svg" alt="address">
+                    <span>transactions</span> by addresses
+                  </div>
+                  <div class="risk__transaction-chart">
+                    <img src="img/risk/chart-6.svg" class="pc-image" alt="chart">
+                    <img src="img/risk/chart-6-mobile.svg" class="mobile-image" alt="chart">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="risk__section">
+            <h2 class="risk__section-title title">
+              Counterparties
+            </h2>
+            <ul class="risk__stats">
+              <li class="risk__stat">
+                <div class="risk__stat-header">
+                  <div class="risk__stat-icon">
+                    <img src="img/risk/exchanges.svg" alt="exchanges">
+                  </div>
+                  <div class="risk__stat-name">
+                    Exchanges
+                  </div>
+                  <div class="risk__stat-value risk__disabled">
+                    28
+                  </div>
+                  <div class="risk__stat-compare">
+                    <img src="img/risk/up.svg" alt="up">
+                  </div>
+                </div>
+                <div class="risk__stat-subtitle risk__disabled">
+                  Bybit, Kucoin, OKX, Huobi, MXC, Coinhako, Poloniex, Binance, HitBTC, mixin, [Yobit.net](http://yobit.net/), Bitkub, Coinbase
+                </div>
+              </li>
+              <li class="risk__stat">
+                <div class="risk__stat-header">
+                  <div class="risk__stat-icon">
+                    <img src="img/risk/defi.svg" alt="defi">
+                  </div>
+                  <div class="risk__stat-name">
+                    defi
+                  </div>
+                  <div class="risk__stat-value risk__disabled">
+                    5
+                  </div>
+                  <div class="risk__stat-compare">
+                    <img src="img/risk/down.svg" alt="down">
+                  </div>
+                </div>
+                <div class="risk__stat-subtitle risk__disabled">
+                  Kraken, WooCommerce Payment Gateway, BitMEX 2, SwissBorg, TradeOgre
+                </div>
+              </li>
+              <li class="risk__stat">
+                <div class="risk__stat-header">
+                  <div class="risk__stat-icon">
+                    <img src="img/risk/fraud.svg" alt="fraud">
+                  </div>
+                  <div class="risk__stat-name">
+                    Fraud
+                  </div>
+                  <div class="risk__stat-value risk__disabled">
+                    1
+                  </div>
+                  <div class="risk__stat-compare">
+                    <img src="img/risk/down.svg" alt="down">
+                  </div>
+                </div>
+                <div class="risk__stat-subtitle risk__disabled">
+                  Harmony Horizon Bridge Exploiter
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="risk__section">
+            <h2 class="risk__section-title title">
+              Address Profile Analysis
+            </h2>
+            <ul class="risk__stats">
+              <li class="risk__stat">
+                <div class="risk__stat-header">
+                  <div class="risk__stat-icon">
+                    <img src="img/risk/wallet.svg" alt="wallet">
+                  </div>
+                  <div class="risk__stat-name">
+                    Wallet
+                  </div>
+                  <div class="risk__stat-value risk__disabled">
+                    2
+                  </div>
+                  <div class="risk__stat-compare">
+                    <img src="img/risk/up.svg" alt="up">
+                  </div>
+                </div>
+                <div class="risk__stat-subtitle risk__disabled">
+                  MetaMask, imToken\
+                </div>
+              </li>
+              <li class="risk__stat">
+                <div class="risk__stat-header">
+                  <div class="risk__stat-icon">
+                    <img src="img/risk/dns.svg" alt="dns">
+                  </div>
+                  <div class="risk__stat-name">
+                    dns
+                  </div>
+                  <div class="risk__stat-value risk__disabled">
+                    11
+                  </div>
+                  <div class="risk__stat-compare">
+                    <img src="img/risk/up.svg" alt="up">
+                  </div>
+                </div>
+                <div class="risk__stat-subtitle risk__disabled">
+                  ordinalchains.eth, ivanzky.eth, openetherwallet.eth, rusfond.eth, acala.eth, elonmuskdoge.eth, mikab321.eth, 🧌TRADEOGRE🧌.eth, rtfktandnike.eth, sparrowcode.eth, posmaxi.eth
+                </div>
+              </li>
+              <li class="risk__stat">
+                <div class="risk__stat-header">
+                  <div class="risk__stat-icon">
+                    <img src="img/risk/social.svg" alt="Social">
+                  </div>
+                  <div class="risk__stat-name">
+                    Social
+                  </div>
+                  <div class="risk__stat-value risk__disabled">
+                    2
+                  </div>
+                  <div class="risk__stat-compare">
+                    <img src="img/risk/down.svg" alt="down">
+                  </div>
+                </div>
+                <div class="risk__stat-subtitle risk__disabled">
+                  @gosufootman, @MEDSHERMAN
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__columns">
+            <div class="footer__column">
+                <div class="footer__column-caption ">
+                    НАШИ РЕШЕНИЯ
+                </div>
+                <ul class="footer__column-list">
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Bholder</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Btrace</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Risk score</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">AML-сервис</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Расследование криптоинцидентов</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <div class="footer__column-caption ">
+                    ПОЛЕЗНЫЕ МАТЕРИАЛЫ
+                </div>
+                <ul class="footer__column-list">
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Регулирование крипторынка</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Криптомошенничество</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Основы блокчейна</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Примеры расследований</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <div class="footer__column-caption ">
+                    О КОМПАНИИ
+                </div>
+                <ul class="footer__column-list">
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Партнерская программа</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Карьера в AML Crypto</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Мы в СМИ</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">История компании</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Политика конфиденциальности</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Правила пользования</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <div class="footer__column-caption ">
+                    КОНТАКТНЫЙ ЦЕНТР
+                </div>
+                <ul class="footer__column-list">
+                    <li class="footer__column-item"><a href="" class="footer__column-link red-link">Сообщить об инциденте</a></li>
+                    <li class="footer__column-item"><a href="" class="footer__column-link">Связаться с нами</a></li>
+                    <li class="footer__column-item arrow-item"><a href="mailto:info@amlcrypto.io" class="footer__column-link">→ info@amlcrypto.io</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <img src="img/SK.svg" alt="SK">
+        </div>
+    </div>
+</footer>
+  </div>
+  <div id="story" class="popup">
+    <div class="popup__body">
+        <button type="button" class="popup__close"></button>
+        <div class="popup__text">
+            <p>
+                Представим <span>Ивана</span> — криптопользователя 28 лет, проживающего в крупном городе и работающего системным аналитиком в успешной ИТ-компании. Помимо стабильной зарплаты, Иван имеет дополнительный доход от различных фриланс-проектов, что позволяет ему периодически инвестировать в криптовалюты.
+            </p>
+            <p>
+                Ивана в мир криптовалют ввел его друг детства <span>Боря</span>, профессиональный геймер, который активно участвует в стейкинге. Первая сделка по обмену фиатных денег на криптовалюту была совершена именно с Борей, поскольку между ними сложился высокий уровень доверия.
+            </p>
+            <p>
+                Далее были попытки заработать на эирдропах. Один раз даже удалось получить небольшое вознаграждение.
+            </p>
+            <p>
+                Боря также научил Ивана пользоваться <span>DEX</span>, чтобы Иван мог зарабатывать, участвуя в <span>фарминге</span> и <span>стейкинге</span>.
+            </p>
+            <p>
+                Иван зарегистрировался на криптовалютной бирже <span>Binance</span>. Иногда он занимался арбитражем и заключал выгодные сделки в формате <span>P2P</span> (peer-to-peer). Когда ему были нужны наличные, легко находил криптообменники с выгодными курсами на платформе <span>Bestchange</span>.
+            </p>
+            <p>
+                Из пользователей у Ивана было только два контрагента — друг детства Боря и <span>Дима</span>.
+            </p>
+            <p>
+                Когда Иван выполнял фриланс-заказы, иногда он получал оплату в криптовалюте от своих заказчиков.
+            </p>
+            <p>
+                Важно отметить, что Иван никогда не приобретал чего-либо в <span>даркнете</span>, а также не вовлекался в мошеннические схемы при P2P обменах. Недавно, однако, при вводе очередной суммы со своего криптоадреса на депозитный адрес <span>Binance</span>, аккаунт был заблокирован в соответствии с рекламентами AML. Теперь Ивану нужно предоставить историю происхождения средств.<span> Но где найти сейчас все эти переписки с пользователями P2P сделок, сделки в криптообменниках, вводы и выводы с бирж, адреса плательщиков за фриланс-заказы...</span>
+            </p>
+            <p>
+                А избежать этих проблем можно было, если бы Иван своевременно проверял контрагентов и себя.
+            </p>
+            <p>
+                <span>Не будь как Иван. Проверь свой risk score и контрагента до совершения сделки.</span>
+            </p>
+        </div>
+        <div class="popup__check">
+            <form action="#" class="check__form">
+                <input type="text" name="wallet" class="form__input" placeholder="Check wallet address">
+                <button type="submit" class="btn btn-primary">
+                    <img src="img/icons/magnifier.svg" alt="icon magnifier">
+                    <span> Проверить</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

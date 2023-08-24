@@ -93,6 +93,19 @@ document.addEventListener("DOMContentLoaded", () => {
             getMenu()
         }
 
+        // side menu
+        if (target.closest('.menu__side-btn')) {
+            document.querySelector('.menu__side').classList.toggle('active');
+            target.closest('.menu__side-btn').classList.toggle('active');
+        }
+
+
+        // dropdown menu
+        if (target.closest('.header__wallet-btn')) {
+            document.querySelector('.header__wallet-menu').classList.toggle('open')
+            target.closest('.header__wallet-btn').classList.toggle('active')
+        }
+
         // read more
         if (target.classList.contains('desc__header-more')) {
 
@@ -107,25 +120,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // tabs
-        if (target.classList.contains('desc__slider-btn')) {
+        if (target.classList.contains('tab-btn')) {
 
-            let currentIndex = Array.from(document.querySelectorAll('.desc__slider-btn')).indexOf(target);
+            let parentTab = target.closest('.tabs');
 
-            document.querySelectorAll('.desc__slider-btn').forEach((btn, index) => {
-                if (index !== currentIndex) {
-                    btn.classList.remove('active');
-                } else {
-                    btn.classList.add("active");
-                }
+            let currentIndex = Array.from(parentTab.querySelectorAll('.tab-btn')).indexOf(target);
+
+            let btns = parentTab.querySelectorAll('.tab-btn');
+            let tabs = parentTab.querySelectorAll('.tab-content');
+
+            btns.forEach((btn, index) => {
+                btn.classList.remove('active');
             });
 
-            document.querySelectorAll('.desc__slider-tab').forEach((tab, index) => {
-                if (index !== currentIndex) {
-                    tab.classList.remove('active');
-                } else {
-                    tab.classList.add("active");
-                }
+            tabs.forEach((tab, index) => {
+                tab.classList.remove('active');
             });
+
+
+            btns[currentIndex].classList.add('active');
+            tabs[currentIndex].classList.add('active');
         }
 
         // accordion
@@ -178,6 +192,50 @@ document.addEventListener("DOMContentLoaded", () => {
     function popupClose(popupActive) {
         popupActive.classList.remove("open");
         document.body.classList.remove('modal-lock');
+    }
+
+
+    // custom select
+    if (document.querySelectorAll(".dropdown").length > 0) {
+
+        document.querySelectorAll(".dropdown").forEach(function (dropdownWrapper) {
+            const dropdownBtn = dropdownWrapper.querySelector(".dropdown__button");
+            const dropdownList = dropdownWrapper.querySelector(".dropdown__list");
+            const dropdownItems = dropdownList.querySelectorAll(".dropdown__list-item");
+            const dropdownInput = dropdownWrapper.querySelector(".dropdown__input");
+
+            dropdownBtn.addEventListener("click", function () {
+                dropdownList.classList.toggle("visible");
+                this.classList.toggle("active");
+            });
+
+            dropdownItems.forEach(function (listItem) {
+                listItem.addEventListener("click", function (e) {
+                    dropdownItems.forEach(function (el) {
+                        el.classList.remove("active");
+                    });
+                    e.target.classList.add("active");
+                    dropdownBtn.innerHTML = this.innerHTML;
+                    dropdownInput.value = this.dataset.value;
+                    dropdownList.classList.remove("visible");
+                    dropdownBtn.classList.remove("active");
+                });
+            });
+
+            document.addEventListener("click", function (e) {
+                if (e.target !== dropdownBtn) {
+                    dropdownBtn.classList.remove("active");
+                    dropdownList.classList.remove("visible");
+                }
+            });
+
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Tab" || e.key === "Escape") {
+                    dropdownBtn.classList.remove("active");
+                    dropdownList.classList.remove("visible");
+                }
+            });
+        });
     }
 
 

@@ -739,7 +739,7 @@
                         <button class="form__btn btn btn-primary">
                             Log in with Email
                         </button>
-                        <a href="" class="form__forgot">Forgot Password?</a>
+                        <a href="#forgot" data-modal class="form__forgot">Forgot Password?</a>
                     </form>
                 </div>
                 <div class="login__input tab-content">
@@ -848,6 +848,30 @@
                 </div>
             </div>
             <a href="#input" data-modal class="login__footer">Already have an account? Sign in!</a>
+        </div>
+    </div>
+</div>
+<div id="forgot" class="popup">
+    <div class="popup__body popup__body-sm">
+        <button type="button" class="popup__close"></button>
+        <div class="login">
+            <h2 class="login__title title">
+                Сброс пароля
+            </h2>
+            <div class="login__body">
+                <form action="#" class="login__form form">
+                    <div class="form__inputs">
+                        <input type="email" name="email" class="form__input" placeholder="Email">
+                    </div>
+                    <button class="form__btn btn btn-primary">
+                        Password Reset
+                    </button>
+                </form>
+            </div>
+            <div class="login__bottom">
+                <a href="#input" data-modal class="login__bottom-link">Already have an account? Sign in!</a>
+                <a href="#register" data-modal class="login__bottom-link">Don’t have account? Register!</a>
+            </div>
         </div>
     </div>
 </div>

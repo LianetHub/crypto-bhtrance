@@ -2471,6 +2471,13 @@ body.modal-lock {
           align-items: flex-start;
 }
 
+.benefits__caption {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .benefits__desc {
   margin-top: 1.25rem;
   font-size: 1.25rem;
@@ -6111,6 +6118,16 @@ body.modal-lock {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+
+  .benefits__caption {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-align: left;
+  }
+
+  .benefits__caption br {
+    display: none;
   }
 
   .benefits__desc {

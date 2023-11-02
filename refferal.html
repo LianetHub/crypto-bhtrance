@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>AML Crypto | Account</title>
+    <title>AML Crypto | Settings</title>
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -135,7 +135,7 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a href="/balance.html" class="menu__link active">
+                    <a href="/balance.html" class="menu__link ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <ellipse cx="5.5" cy="2" rx="5" ry="1.5" stroke="var(--hover-color)" />
                             <path d="M10.5 4C10.5 4.82843 8.26142 5.5 5.5 5.5C2.73858 5.5 0.5 4.82843 0.5 4" stroke="var(--hover-color)" />
@@ -219,7 +219,7 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a href="/refferal.html" class="menu__link ">
+                    <a href="/refferal.html" class="menu__link active">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <g clip-path="url(#clip0_1962_2812)">
                                 <path d="M10.4894 8.01056C10.4894 9.67324 11.8373 11.0211 13.5 11.0211C15.1627 11.0211 16.5106 9.67324 16.5106 8.01056C16.5106 6.34787 15.1627 5 13.5 5C11.8373 5 10.4894 6.34787 10.4894 8.01056Z" stroke="var(--hover-color)" />
@@ -381,17 +381,6 @@
     </button>
 </header>
     <main class="page">
-      <section class="hot">
-    <div class="container">
-        <div class="hot__body">
-            <h1 class="hot__title">
-                <img src="img/icons/hand.svg" alt="hand">
-                Recent Hot Event:
-            </h1>
-            <a href="" class="hot__link">Team Finance Exploiter (0xBa3...17e6E)</a>
-        </div>
-    </div>
-</section>
       <div class="check check-sm">
         <div class="container">
           <div class="check__body">
@@ -405,99 +394,493 @@
           </div>
         </div>
       </div>
-      <section class="balance">
+      <section class="refferal">
         <div class="container">
-          <div class="balance__header">
-
-            <form action="#" class="balance__sale">
-              <div class="balance__sale-caption">
-                <img src="img/icons/sale-white.svg" alt="sale">
-                есть промокод?
-                <img src="img/icons/sale-white.svg" alt="sale">
+          <div class="refferal__header">
+            <div class="refferal__main">
+              <h2 class="refferal__title title">
+                Реферальная программа
+              </h2>
+              <div class="refferal__desc">
+                <p>
+                  <strong>Вы можете заработать 20% с каждой покупки вашего реферала.</strong>
+                </p>
+                <p>Пользователь, который перешел по вашей ссылке, получит после первой оплаты <strong>10 дополнительных бесплатных проверок.</strong>
+                </p>
+                <p>Реферальная ссылка не имеет срока действия, поэтому вы можете продолжать зарабатывать все время активности ваших рефералов.</p>
               </div>
-              <div class="balance__sale-body">
-                <img src="img/icons/sale.svg" alt="sale">
-                <input type="text" name="promo" class="form__input">
-                <button class="btn btn-primary">
-                  <img src="img/icons/arrow-right-white.svg" alt="icon arrow">
-                  <span> Применить промокод</span>
-                </button>
-              </div>
-            </form>
-            <h2 class="balance__title title">
-              История баланса
-            </h2>
+            </div>
+            <div class="refferal__image">
+              <img src="img/refferal.svg" alt="refferal">
+              <a href="" class="refferal__image-more">Подробнее о реферальной программе</a>
+            </div>
           </div>
-          <table class="balance__table table">
+          <table class="counterparties__table table">
             <thead>
               <tr>
+                <th>
+                  <img src="img/icons/arrows-top.svg" alt="arrows">
+                  адрес
+                </th>
+                <th>
+                  <img src="img/icons/arrows-top.svg" alt="arrows">
+                  имя
+                  <img src="img/icons/funnel.svg" alt="funnel">
+                </th>
+                <th>
+                  <img src="img/icons/arrows-top.svg" alt="arrows">
+                  входящие
+                  <img src="img/icons/funnel.svg" alt="funnel">
+                </th>
+                <th>
+                  <img src="img/icons/arrows-top.svg" alt="arrows">
+                  исходящие
+                  <img src="img/icons/funnel.svg" alt="funnel">
+                </th>
                 <th class="last__table-mobile order-2">
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/arrows-top.svg" alt="arrows">
-                  </button>
-                  <span class="balance__table-desctop">date</span>
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/funnel.svg" alt="funnel">
-                  </button>
-                </th>
-                <th>
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/arrows-top.svg" alt="arrows">
-                  </button>
-                  Receipts, $
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/funnel.svg" alt="funnel">
-                  </button>
-                </th>
-                <th>
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/arrows-top.svg" alt="arrows">
-                  </button>
-                  Expenses, $
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/funnel.svg" alt="funnel">
-                  </button>
+                  <img src="img/icons/arrows-top.svg" alt="arrows">
+                  дата
+                  <img src="img/icons/funnel.svg" alt="funnel">
                 </th>
                 <th class="last__table-mobile order-1">
-                  <span class="balance__table-mobile">DATE /</span>
-                  comment
+                  уровень риска
+                  <img src="img/icons/funnel.svg" alt="funnel">
                 </th>
+                <th></th>
               </tr>
             </thead>
             <tr>
               <td>
-                <div class="table__time">
-                  <span>10/07/2022</span> 09:01:57
+                <div class="table__hash">
+                  0xfgg...hnf00
+                  <button class="table__copy">
+                    <img src="img/icons/copy.svg" alt="icon copy">
+                  </button>
                 </div>
               </td>
               <td>
-              </td>
-              <td>
-                <div class="table__minus">
-                  -1,00
+                <div class="table__user">
+                  User #151465
+                  <button class="table__edit">
+                    <img src="img/icons/edit.svg" alt="icon edit">
+                  </button>
                 </div>
               </td>
               <td>
-                <div class="table__comment">
-                  Donec nec augue hendrerit, rhoncus massa id, iaculis velit. Curabitur consequat neque libero, dapibus mollis.
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  21 512,51
                 </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  21 512,51
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <button type="button" class="table__btn btn-gradient">
+                  <img src="img/icons/magnifier.svg" alt="magnifier"> Проверить адрес
+                </button>
               </td>
             </tr>
             <tr>
+              <td>
+                <div class="table__hash">
+                  0x15g...55f00
+                  <button class="table__copy">
+                    <img src="img/icons/copy.svg" alt="icon copy">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__user">
+                  User #151465
+                  <button class="table__edit">
+                    <img src="img/icons/edit.svg" alt="icon edit">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  2 552,65
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  2 552,65
+                </div>
+              </td>
               <td>
                 <div class="table__time">
                   <span>08/07/2022</span> 14:39:47
                 </div>
               </td>
               <td>
-                <div class="table__up">+87,50</div>
-              </td>
-              <td>
-              </td>
-              <td>
-                <div class="table__comment">
-                  Donec nec augue hendrerit, rhoncus massa id, iaculis velit. Curabitur consequat neque libero, dapibus mollis.
+                <div class="table__risk">
+                  <div class="table__risk-main">
+                    <div class="table__value green">
+                      10%
+                    </div>
+                    <div class="table__label green">
+                      Низкий
+                    </div>
+                  </div>
+                  <a href="" class="table__result">Result >></a>
                 </div>
+              </td>
+              <td>
+                <button type="button" class="table__btn">
+                  Проверить еще раз
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table__hash">
+                  0x78f...ggg55
+                  <button class="table__copy">
+                    <img src="img/icons/copy.svg" alt="icon copy">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__user">
+                  User #151465
+                  <button class="table__edit">
+                    <img src="img/icons/edit.svg" alt="icon edit">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  85 858,65
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  85 858,65
+                </div>
+              </td>
+              <td>
+                <div class="table__time">
+                  <span>30/06/2022</span> 23:01:02
+                </div>
+              </td>
+              <td>
+                <div class="table__risk">
+                  <div class="table__risk-main">
+                    <div class="table__value red">
+                      54%
+                    </div>
+                    <div class="table__label red">
+                      Высокий
+                    </div>
+                  </div>
+                  <a href="" class="table__result">Result >></a>
+                </div>
+              </td>
+              <td>
+                <button type="button" class="table__btn">
+                  Проверить еще раз
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table__hash">
+                  0xjiu...k1118
+                  <button class="table__copy">
+                    <img src="img/icons/copy.svg" alt="icon copy">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__user">
+                  User #151465
+                  <button class="table__edit">
+                    <img src="img/icons/edit.svg" alt="icon edit">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  5 245,64
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  5 245,64
+                </div>
+              </td>
+              <td>
+                <div class="table__time">
+                  <span>29/06/2022</span> 02:02:42
+                </div>
+              </td>
+              <td>
+                <div class="table__risk">
+                  <div class="table__risk-main">
+                    <div class="table__value yellow">
+                      30%
+                    </div>
+                    <div class="table__label yellow">
+                      Средний
+                    </div>
+                  </div>
+                  <a href="" class="table__result">Result >></a>
+                </div>
+              </td>
+              <td>
+                <button type="button" class="table__btn">
+                  Проверить еще раз
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table__hash">
+                  0xjiu...k1118
+                  <button class="table__copy">
+                    <img src="img/icons/copy.svg" alt="icon copy">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__user">
+                  User #151465
+                  <button class="table__edit">
+                    <img src="img/icons/edit.svg" alt="icon edit">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  4 265,00
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  4 265,00
+                </div>
+              </td>
+              <td>
+                <div class="table__time">
+                  <span> 29/06/2022</span> 02:02:42
+                </div>
+              </td>
+              <td>
+                <div class="table__risk">
+                  <div class="table__risk-main">
+                    <div class="table__value green">
+                      10%
+                    </div>
+                    <div class="table__label green">
+                      Низкий
+                    </div>
+                  </div>
+                  <a href="" class="table__result">Result >></a>
+                </div>
+              </td>
+              <td>
+                <button type="button" class="table__btn">
+                  Проверить еще раз
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table__hash">
+                  0xjiu...k1118
+                  <button class="table__copy">
+                    <img src="img/icons/copy.svg" alt="icon copy">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__user">
+                  User #151465
+                  <button class="table__edit">
+                    <img src="img/icons/edit.svg" alt="icon edit">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  2 168,65
+                </div>
+              </td>
+              <td>
+                <div class="table__output">
+                  <img src="img/icons/output.svg" alt="output">
+                  2 168,65
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <button type="button" class="table__btn btn-gradient">
+                  <img src="img/icons/magnifier.svg" alt="magnifier"> Проверить адрес
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table__hash">
+                  0xjiu...k1118
+                  <button class="table__copy">
+                    <img src="img/icons/copy.svg" alt="icon copy">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__user">
+                  Username Username
+                  <button class="table__edit">
+                    <img src="img/icons/edit.svg" alt="icon edit">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  1,07
+                </div>
+              </td>
+              <td>
+                <div class="table__output">
+                  <img src="img/icons/output.svg" alt="output">
+                  1,07
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <button type="button" class="table__btn btn-gradient">
+                  <img src="img/icons/magnifier.svg" alt="magnifier"> Проверить адрес
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table__hash">
+                  0xfgg...hnf00
+                  <button class="table__copy">
+                    <img src="img/icons/copy.svg" alt="icon copy">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__user">
+                  User #151465
+                  <button class="table__edit">
+                    <img src="img/icons/edit.svg" alt="icon edit">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  85 858,65
+                </div>
+              </td>
+              <td>
+                <div class="table__output">
+                  <img src="img/icons/output.svg" alt="output">
+                  5 245,64
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <button type="button" class="table__btn btn-gradient">
+                  <img src="img/icons/magnifier.svg" alt="magnifier"> Проверить адрес
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table__hash">
+                  0x15g...55f00
+                  <button class="table__copy">
+                    <img src="img/icons/copy.svg" alt="icon copy">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__user">
+                  User #151465
+                  <button class="table__edit">
+                    <img src="img/icons/edit.svg" alt="icon edit">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  5 245,64
+                </div>
+              </td>
+              <td>
+                <div class="table__output">
+                  <img src="img/icons/output.svg" alt="output">
+                  4 265,00
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <button type="button" class="table__btn btn-gradient">
+                  <img src="img/icons/magnifier.svg" alt="magnifier"> Проверить адрес
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table__hash">
+                  0x78f...ggg55
+                  <button class="table__copy">
+                    <img src="img/icons/copy.svg" alt="icon copy">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__user">
+                  Username Username
+                  <button class="table__edit">
+                    <img src="img/icons/edit.svg" alt="icon edit">
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="table__input">
+                  <img src="img/icons/input.svg" alt="input">
+                  4 265,00
+                </div>
+              </td>
+              <td>
+                <div class="table__output">
+                  <img src="img/icons/output.svg" alt="output">
+                  2 168,65
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <button type="button" class="table__btn btn-gradient">
+                  <img src="img/icons/magnifier.svg" alt="magnifier"> Проверить адрес
+                </button>
               </td>
             </tr>
           </table>

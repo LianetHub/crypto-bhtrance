@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>AML Crypto | Account</title>
+    <title>AML Crypto | Settings</title>
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -135,7 +135,7 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a href="/balance.html" class="menu__link active">
+                    <a href="/balance.html" class="menu__link ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <ellipse cx="5.5" cy="2" rx="5" ry="1.5" stroke="var(--hover-color)" />
                             <path d="M10.5 4C10.5 4.82843 8.26142 5.5 5.5 5.5C2.73858 5.5 0.5 4.82843 0.5 4" stroke="var(--hover-color)" />
@@ -210,7 +210,7 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a href="/settings-login.html" class="menu__link ">
+                    <a href="/settings-login.html" class="menu__link active">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M7.60363 19.5H12.3964V16.7189C13.2292 16.427 14.0007 15.9856 14.6721 15.4166L17.1036 16.8083L19.5 12.6917L17.0693 11.3023C17.229 10.4413 17.229 9.55869 17.0693 8.69771L19.5 7.30833L17.1036 3.19167L14.6721 4.58421C14.0008 4.01494 13.2293 3.5732 12.3964 3.28113V0.5H7.60363V3.28113C6.7707 3.5732 5.99923 4.01494 5.32788 4.58421L2.89637 3.19167L0.5 7.30833L2.93072 8.69771C2.77105 9.55869 2.77105 10.4413 2.93072 11.3023L0.5 12.6917L2.89637 16.8083L5.32788 15.4158C5.99923 15.9851 6.7707 16.4268 7.60363 16.7189V19.5Z" stroke="var(--hover-color)" stroke-linejoin="round" />
                             <path d="M14 10C14 7.79086 12.2091 6 10 6C7.79086 6 6 7.79086 6 10C6 12.2091 7.79086 14 10 14C12.2091 14 14 12.2091 14 10Z" stroke="var(--hover-color)" stroke-linejoin="round" />
@@ -381,17 +381,6 @@
     </button>
 </header>
     <main class="page">
-      <section class="hot">
-    <div class="container">
-        <div class="hot__body">
-            <h1 class="hot__title">
-                <img src="img/icons/hand.svg" alt="hand">
-                Recent Hot Event:
-            </h1>
-            <a href="" class="hot__link">Team Finance Exploiter (0xBa3...17e6E)</a>
-        </div>
-    </div>
-</section>
       <div class="check check-sm">
         <div class="container">
           <div class="check__body">
@@ -405,138 +394,423 @@
           </div>
         </div>
       </div>
-      <section class="balance">
+      <section class="settings">
         <div class="container">
-          <div class="balance__header">
-
-            <form action="#" class="balance__sale">
-              <div class="balance__sale-caption">
-                <img src="img/icons/sale-white.svg" alt="sale">
-                есть промокод?
-                <img src="img/icons/sale-white.svg" alt="sale">
+          <h2 class="settings__title title">Настройки аккаунта</h2>
+          <div class="settings__body">
+            <div class="settings__main">
+              <div class="settings__header">
+                <div class="settings__thumb"></div>
               </div>
-              <div class="balance__sale-body">
-                <img src="img/icons/sale.svg" alt="sale">
-                <input type="text" name="promo" class="form__input">
-                <button class="btn btn-primary">
-                  <img src="img/icons/arrow-right-white.svg" alt="icon arrow">
-                  <span> Применить промокод</span>
+              <a href="" class="settings__thumb-change">upload a profile image</a>
+              <div class="settings__nickname">
+                <div class="settings__nickname-value">0x8d0...c47b4</div>
+                <button type="button" class="settings__nickname-edit">
+                  <img src="img/icons/edit.svg" alt="icon">
                 </button>
+              </div>
+              <div class="settings__auth">
+                <div class="settings__auth-section">
+                  <div class="settings__auth-caption">
+                    Последняя авторизация:
+                  </div>
+                  <div class="settings__auth-time">
+                    10/07/2022 09:01:57
+                  </div>
+                </div>
+                <div class="settings__auth-section">
+                  <div class="settings__auth-caption">
+                    Метод авторизации:
+                  </div>
+                  <div class="settings__auth-methods">
+                    <a href="" class="settings__auth-method">
+                      <img src="img/icons/logotypes/01.svg" alt="icon">
+                    </a>
+                    <a href="" class="settings__auth-method">
+                      <img src="img/icons/logotypes/02.svg" alt="icon">
+                    </a>
+                    <a href="" class="settings__auth-method active">
+                      <img src="img/icons/logotypes/03.svg" alt="icon">
+                    </a>
+                    <a href="" class="settings__auth-method">
+                      <img src="img/icons/logotypes/04.svg" alt="icon">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form action="#" class="settings__form form">
+              <div class="settings__form-row">
+                <div class="form__label">
+                  Email
+                </div>
+                <div class="form__row">
+                  <input type="email" name="email" class="form__input" placeholder="Enter your e-mail" value="satoshi@nakamoto.com">
+                  <button type="button" class="form__change">Rename</button>
+                </div>
+              </div>
+              <div class="settings__form-row">
+                <div class="form__label">
+                  Password
+                </div>
+                <div class="form__row">
+                  <input type="password" name="pass" class="form__input" placeholder="Enter password" value="password">
+                  <button type="button" class="form__change">Reset</button>
+                </div>
+              </div>
+              <div class="settings__form-row">
+                <div class="form__label">
+                  Phone
+                </div>
+                <div class="form__row">
+                  <div class="form__row-block">
+                    <div class="form__dropdown dropdown">
+                      <button type="button" class="dropdown__button">
+                        <div class="form__country">
+                          <div class="form__country-flag">
+                            <img src="img/icons/russia.svg" alt="flag">
+                          </div>
+                          <div class="form__country-number">
+                            +7
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown__list">
+                        <li data-value="+7" class="dropdown__list-item active">
+                          <div class="form__country">
+                            <div class="form__country-flag">
+                              <img src="img/icons/russia.svg" alt="flag">
+                            </div>
+                            <div class="form__country-number">
+                              +7
+                            </div>
+                          </div>
+                        </li>
+                        <li data-value="+3" class="dropdown__list-item active">
+                          <div class="form__country">
+                            <div class="form__country-flag">
+                              <img src="img/icons/russia.svg" alt="flag">
+                            </div>
+                            <div class="form__country-number">
+                              +3
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <input type="text" name="results" class="dropdown__input hidden" hidden value="+3">
+
+                    </div>
+                    <input type="tel" name="phone" class="form__input">
+                  </div>
+                  <button type="button" class="form__change">Verify</button>
+                </div>
+              </div>
+              <div class="settings__form-row">
+                <div class="form__label">
+                  Telegram
+                </div>
+                <div class="form__row">
+                  <a href="" class="login__telegram">
+                    <img src="img/icons/telegram-white.svg" alt="icon telegram">
+                    Connect Telegram account
+                  </a>
+                </div>
               </div>
             </form>
-            <h2 class="balance__title title">
-              История баланса
-            </h2>
-          </div>
-          <table class="balance__table table">
-            <thead>
-              <tr>
-                <th class="last__table-mobile order-2">
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/arrows-top.svg" alt="arrows">
-                  </button>
-                  <span class="balance__table-desctop">date</span>
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/funnel.svg" alt="funnel">
-                  </button>
-                </th>
-                <th>
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/arrows-top.svg" alt="arrows">
-                  </button>
-                  Receipts, $
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/funnel.svg" alt="funnel">
-                  </button>
-                </th>
-                <th>
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/arrows-top.svg" alt="arrows">
-                  </button>
-                  Expenses, $
-                  <button type="button" class="table__filter">
-                    <img src="img/icons/funnel.svg" alt="funnel">
-                  </button>
-                </th>
-                <th class="last__table-mobile order-1">
-                  <span class="balance__table-mobile">DATE /</span>
-                  comment
-                </th>
-              </tr>
-            </thead>
-            <tr>
-              <td>
-                <div class="table__time">
-                  <span>10/07/2022</span> 09:01:57
-                </div>
-              </td>
-              <td>
-              </td>
-              <td>
-                <div class="table__minus">
-                  -1,00
-                </div>
-              </td>
-              <td>
-                <div class="table__comment">
-                  Donec nec augue hendrerit, rhoncus massa id, iaculis velit. Curabitur consequat neque libero, dapibus mollis.
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="table__time">
-                  <span>08/07/2022</span> 14:39:47
-                </div>
-              </td>
-              <td>
-                <div class="table__up">+87,50</div>
-              </td>
-              <td>
-              </td>
-              <td>
-                <div class="table__comment">
-                  Donec nec augue hendrerit, rhoncus massa id, iaculis velit. Curabitur consequat neque libero, dapibus mollis.
-                </div>
-              </td>
-            </tr>
-          </table>
-          <div class="counterparties__footer">
-            <div class="counterparties__footer-quantity">
-              <span>616</span>items
-            </div>
-            <div class="counterparties__footer-pagination pagination">
-              <a href="" class="pagination__btn">
-                <img src="img/icons/prev.svg" alt="prev">
-              </a>
-              <a href="" class="pagination__item active">1</a>
-              <a href="" class="pagination__item">2</a>
-              <span class="pagination__item">...</span>
-              <a href="" class="pagination__item">29</a>
-              <a href="" class="pagination__item">30</a>
-              <a href="" class="pagination__btn">
-                <img src="img/icons/next.svg" alt="next">
-              </a>
-            </div>
-            <div class="counterparties__footer-filter">
-              show
-              <div class="counterparties__footer-dropdown dropdown">
-                <button type="button" class="dropdown__button">
-                  10
-                </button>
-                <ul class="dropdown__list">
-                  <li data-value="10" class="dropdown__list-item active">10</li>
-                  <li data-value="20" class="dropdown__list-item">20</li>
-                  <li data-value="50" class="dropdown__list-item">50</li>
-                  <li data-value="100" class="dropdown__list-item">100</li>
-                </ul>
-                <input type="text" name="results" class="dropdown__input hidden" hidden value="10">
+            <div class="settings__addresses">
+              <div class="settings__addresses-caption">
+                <img src="img/icons/address.svg" alt="address">
+                подключенные адреса
               </div>
-              records
+              <div class="settings__addresses-ratings">
+                <div class="rating__column bordered">
+                  <div class="rating__column-header">
+                    <div class="rating__column-logo">
+                      <img src="img/account/address/01.svg" alt="logo">
+                    </div>
+                    <div class="rating__column-caption">
+                      Metamask Wallets
+                    </div>
+                  </div>
+                  <a href="" class="rating__column-btn btn btn-primary btn-fullwidth">
+                    Connect Wallet
+                  </a>
+                </div>
+                <div class="rating__column bordered">
+                  <div class="rating__column-header">
+                    <div class="rating__column-logo">
+                      <img src="img/account/address/02.svg" alt="logo">
+                    </div>
+                    <div class="rating__column-caption">
+                      Ever Wallets
+                    </div>
+                  </div>
+                  <a href="" class="rating__column-btn btn btn-primary btn-fullwidth">
+                    Connect Wallet
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <style>
+        .settings {
+          padding: 3.5rem 0;
+        }
+
+        .settings__title {
+          text-align: left;
+        }
+
+        .settings__body {
+          margin-top: 3.75rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          gap: 2.5rem;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+
+        .settings__header {
+          max-width: 9.375rem;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .settings__main {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 16.875rem;
+          flex: 0 0 16.875rem;
+          border-radius: 0.0625rem;
+          background: #f0f4f7;
+          padding: 1.88rem 1.25rem 1.62rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+        }
+
+        .settings__thumb {
+          height: 0;
+          padding-bottom: 100%;
+          position: relative;
+          width: 100%;
+          background: url("../img/thumb.svg") center/3.125rem auto no-repeat;
+          border: 0.125rem solid #fff;
+          border-radius: 50%;
+        }
+
+        .settings__thumb img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 50%;
+        }
+
+        .settings__thumb-change {
+          margin-top: 1.25rem;
+          color: #ff8562;
+          text-align: center;
+          font-size: 0.875rem;
+          font-weight: 300;
+          text-transform: capitalize;
+        }
+
+        .settings__nickname {
+          margin-top: 2.5rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-column-gap: 0.63rem;
+          -moz-column-gap: 0.63rem;
+          column-gap: 0.63rem;
+        }
+
+        .settings__nickname-value {
+          color: #50505a;
+          font-size: 1.25rem;
+        }
+
+        .settings__nickname-edit {
+          width: 1.25rem;
+        }
+
+        .settings__auth {
+          margin-top: 2.5rem;
+          border-top: 0.0625rem solid #a6afbd;
+          width: 100%;
+          padding-top: 2.5rem;
+          text-align: center;
+        }
+
+        .settings__auth-section {
+          font-size: 0.875rem;
+          font-weight: 300;
+        }
+
+        .settings__auth-section:not(:last-child) {
+          margin-bottom: 1.25rem;
+        }
+
+        .settings__auth-caption {
+          color: #a6afbd;
+        }
+
+        .settings__auth-time {
+          margin-top: 0.62rem;
+        }
+
+        .settings__auth-methods {
+          margin-top: 1.25rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+        }
+
+        .settings__auth-method {
+          opacity: 0.15;
+          -webkit-transition: opacity 0.3s ease 0s;
+          -o-transition: opacity 0.3s ease 0s;
+          transition: opacity 0.3s ease 0s;
+        }
+
+        .settings__auth-method.active {
+          opacity: 1;
+        }
+
+        .settings__form-row {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          gap: 0.625rem;
+        }
+
+        .settings__form-row .form__label {
+          -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+          order: -1;
+          margin-bottom: 0;
+        }
+
+        .settings__form-row .form__change {
+          -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+          order: -1;
+          margin-left: auto;
+        }
+
+        .settings__form-row:not(:last-child) {
+          margin-bottom: 2.5rem;
+        }
+
+        .settings__addresses-caption {
+          color: #50505a;
+          font-size: 1.25rem;
+          text-transform: uppercase;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-column-gap: 0.62em;
+          -moz-column-gap: 0.62em;
+          column-gap: 0.62em;
+        }
+
+        .settings__addresses-ratings {
+          margin-top: 2.5rem;
+        }
+
+        .settings__addresses-ratings .rating__column:not(:last-child) {
+          margin-bottom: 2.5rem;
+        }
+
+        @media (min-width: 575.98px) {
+          .settings__form-row .form__label {
+            -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+            order: 0;
+            margin-bottom: 0.62rem;
+          }
+
+          .settings__form-row .form__change {
+            -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+            order: 0;
+            margin-left: 0;
+          }
+
+          .settings__form-row {
+            display: block;
+          }
+
+          .settings__addresses-ratings {
+            min-width: 23.3125rem;
+          }
+        }
+
+        @media (min-width: 767.98px) {
+          .settings__body {
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+          }
+
+          .settings__form {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+            order: 1;
+          }
+        }
+
+        @media (min-width: 1199.98px) {
+          .settings__body {
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+          }
+
+          .settings__form {
+            -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+            order: 0;
+          }
+        }
+
+        @media (any-hover: hover) {
+          .settings__thumb-change:hover {
+            text-decoration: underline;
+          }
+
+          .settings__auth-method:hover {
+            opacity: 1;
+          }
+        }
+      </style>
     </main>
     <footer class="footer">
     <div class="container">

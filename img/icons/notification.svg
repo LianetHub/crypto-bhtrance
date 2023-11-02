@@ -1,0 +1,16 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="notification-icon">
+<g id="Group 11">
+<g id="Group 10">
+<path id="Vector" d="M16 17V9.34711C16 9.34711 16.021 3 10 3" stroke="#50505A" stroke-linejoin="round"/>
+<path id="Vector_2" d="M4 17V9.34711C4 9.34711 3.97899 3 10 3" stroke="#50505A" stroke-linejoin="round"/>
+</g>
+<g id="Group 34">
+<circle id="Ellipse 4" cx="10" cy="19" r="1" fill="#50505A"/>
+<path id="Ellipse 5" d="M12 3C12 1.52724 11.1046 1 10 1C8.89543 1 8 1.52724 8 3" stroke="#50505A"/>
+<path id="Line 1" d="M2 17H18" stroke="#50505A"/>
+</g>
+</g>
+<circle id="Ellipse 3" cx="15.5" cy="9.5" r="3.75" fill="#D0C018" stroke="#FBFCFD" stroke-width="1.5"/>
+</g>
+</svg>

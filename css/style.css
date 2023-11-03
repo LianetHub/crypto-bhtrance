@@ -1083,6 +1083,9 @@ body.modal-lock {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .table__status.red {
